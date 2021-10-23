@@ -1,0 +1,28 @@
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Script by Ente#7092";
+    Text = "More Scripts will be added soon!";
+})
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Enjoy!";
+    Text = "";
+})
+
+local IdToUrl = {
+    [7429434108] = "-----------------------------------------------------------------",
+    [1730877806] = "https://raw.githubusercontent.com/CFA-HUB/CFA-HUB/main/cfahubfree.lua",
+    [3978370137] = "https://raw.githubusercontent.com/CFA-HUB/CFA-HUB/main/cfahubfree.lua",
+    [4616652839] = "https://bruh.keshsenpai.com/.lua",
+    [6986372023] = "https://bruh.keshsenpai.com/.lua",
+    [6846458508] = "https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua",
+    [5130598377] = "https://raw.githubusercontent.com/sannin9000/scripts/main/aut.lua",
+    [4282985734] = "https://raw.githubusercontent.com/SpiritXmas/Project-Hook/main/required.lua",
+    [6339160453] = "https://raw.githubusercontent.com/ZaRdoOx/hub-1/main/Hub",
+    [4520749081] = "https://raw.githubusercontent.com/DookDekDEE/ALLFREE/main/hyperx.lua",
+    [2753915549] = "https://raw.githubusercontent.com/DookDekDEE/ALLFREE/main/hyperx.lua",
+     [606849621] = "https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Jailbreak/Jailbreak",
+    [7393403076] = "https://raw.githubusercontent.com/pspboy08/dollhouse/main/AASGUI.lua"
+}
+
+if IdToUrl[game.PlaceId] then
+    loadstring(game:HttpGet(IdToUrl[game.PlaceId]))()
+end
